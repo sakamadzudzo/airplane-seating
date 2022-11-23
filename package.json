@@ -22,5 +22,10 @@
   "homepage": "https://github.com/sakamadzudzo/airplane-seating#readme",
   "devDependencies": {
     "@types/node": "^18.11.9"
-  }
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "colorette": "^2.0.19"
+  },
+  "type": "module"
 }

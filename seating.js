@@ -8,12 +8,12 @@ const LEGEND = [
     `${yellow('■')} Empty`,
 ];
 
-var seats = [];
-var totalRows = 0;
-var totalCols = 0;
+let seats = [];
+let totalRows = 0;
+let totalCols = 0;
 
 function seatPassengers(passengersCount) {
-    var passenger = 1;
+    let passenger = 1;
     seats.filter(seat => { if (seat.color === 'A') { return seat } }).forEach(seat => {
         if (passenger <= passengersCount) {
             seat.passenger = white(passenger.toLocaleString('en-US', {
@@ -47,7 +47,7 @@ function printSeatingArrangment(seatArrangement) {
     let batchNum = 0;
     let rowPrint = '';
     console.log(`${EOL}🡑 Cockpit This Way 🡑${EOL}`);
-    var seatCount = 0;
+    let seatCount = 0;
     new Array(totalRows).fill(0).forEach(function (row, r) {
         let countedCols = 1;
         new Array(totalCols).fill(0).forEach(function (col, c) {
@@ -83,7 +83,7 @@ function getSeatColor(seatArrangement) {
     });
 
     let batchNum = 0;
-    var seatCount = 0;
+    let seatCount = 0;
     let color = '';
     let seat = '';
     new Array(totalRows).fill(0).forEach(function (row, r) {
